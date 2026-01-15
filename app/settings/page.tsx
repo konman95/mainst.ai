@@ -216,7 +216,7 @@ export default function Settings() {
   }
 
   function toggleIntegration(id: Integration["id"]) {
-    const next = integrations.map(integration => {
+    const next = integrations.map((integration): Integration => {
       if (integration.id !== id) return integration;
       if (integration.status === "connected") {
         return { ...integration, status: "disconnected", lastSync: "Paused" };
