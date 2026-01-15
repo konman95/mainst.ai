@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "threads",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "contact_id", "order": "ASCENDING" },
+        { "fieldPath": "created_ts", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "actionQueue",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "created_ts", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

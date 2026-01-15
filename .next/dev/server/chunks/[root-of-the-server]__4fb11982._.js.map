@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/konnerwest/mainst1/mainstai/app/api/mock/health/route.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\n\nexport async function GET() {\n  return NextResponse.json({ status: 'ok', timestamp: Date.now() });\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe;IACpB,OAAO,gJAAY,CAAC,IAAI,CAAC;QAAE,QAAQ;QAAM,WAAW,KAAK,GAAG;IAAG;AACjE"}}]
+}

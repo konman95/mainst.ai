@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/mock/contacts/[id]/route": "app/api/mock/contacts/[id]/route.js",
+  "/api/mock/contacts/route": "app/api/mock/contacts/route.js",
+  "/api/mock/health/route": "app/api/mock/health/route.js",
+  "/chat/page": "app/chat/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/login/page": "app/login/page.js",
+  "/owner-cover/page": "app/owner-cover/page.js",
+  "/page": "app/page.js"
+}
