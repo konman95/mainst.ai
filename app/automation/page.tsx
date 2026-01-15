@@ -110,7 +110,7 @@ export default function Automation() {
   }
 
   function toggleRule(id: string) {
-    const next = rules.map(r =>
+    const next = rules.map((r): Rule =>
       r.id === id ? { ...r, status: r.status === "active" ? "paused" : "active" } : r
     );
     setRules(next);
