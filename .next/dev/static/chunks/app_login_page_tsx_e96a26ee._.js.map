@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/konnerwest/mainst1/mainstai/app/login/page.tsx"],"sourcesContent":["\"use client\";\nimport { useState } from \"react\";\nimport { setAuth } from \"../../lib/auth\";\n\nexport default function Login() {\n  const [uid,setUid]=useState(\"123\");\n  const [token,setToken]=useState(\"dev-123\");\n  return (\n    <div>\n      <h2>DEV Login</h2>\n      <input className=\"input\" value={uid} onChange={e=>setUid(e.target.value)} />\n      <input className=\"input\" value={token} onChange={e=>setToken(e.target.value)} />\n      <button className=\"btn primary\" onClick={()=>{\n        setAuth({uid,token});\n        location.href=\"/dashboard\";\n      }}>Login</button>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AACA;AACA;;;AAFA;;;AAIe,SAAS;;IACtB,MAAM,CAAC,KAAI,OAAO,GAAC,IAAA,yKAAQ,EAAC;IAC5B,MAAM,CAAC,OAAM,SAAS,GAAC,IAAA,yKAAQ,EAAC;IAChC,qBACE,6LAAC;;0BACC,6LAAC;0BAAG;;;;;;0BACJ,6LAAC;gBAAM,WAAU;gBAAQ,OAAO;gBAAK,UAAU,CAAA,IAAG,OAAO,EAAE,MAAM,CAAC,KAAK;;;;;;0BACvE,6LAAC;gBAAM,WAAU;gBAAQ,OAAO;gBAAO,UAAU,CAAA,IAAG,SAAS,EAAE,MAAM,CAAC,KAAK;;;;;;0BAC3E,6LAAC;gBAAO,WAAU;gBAAc,SAAS;oBACvC,IAAA,yHAAO,EAAC;wBAAC;wBAAI;oBAAK;oBAClB,SAAS,IAAI,GAAC;gBAChB;0BAAG;;;;;;;;;;;;AAGT;GAdwB;KAAA"}}]
-}
