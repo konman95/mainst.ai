@@ -68,6 +68,7 @@ export async function POST(request: Request) {
 
   if (uid === "dev") {
     addAction({
+      uid,
       action: decision.action,
       confidence: decision.confidence,
       restricted: decision.restricted,
