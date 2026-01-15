@@ -11,7 +11,10 @@ import {
 const DEFAULT_SETTINGS = {
   mode: "monitor",
   confidenceThreshold: 0.85,
-  restrictedTopics: ["billing", "complaints", "legal"]
+  restrictedTopics: ["billing", "complaints", "legal"],
+  quietHoursStart: "20:00",
+  quietHoursEnd: "07:00",
+  quietHoursEnabled: false
 };
 
 function isQuietHours(settings: typeof DEFAULT_SETTINGS) {
