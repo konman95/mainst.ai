@@ -163,7 +163,7 @@ export default function Settings() {
     api.dashboardSummary().then(setSummary).catch(() => setSummary(null));
   }, []);
 
-  const effectiveRole = access?.effective_role || access?.role;
+  const effectiveRole = (access?.effective_role || access?.role || "Owner") as TeamMember["role"];
   const workspaceLabel =
     workspaces.find(item => item.id === currentWorkspace)?.name ||
     profile?.name ||
